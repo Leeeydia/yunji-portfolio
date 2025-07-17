@@ -9,12 +9,13 @@ import Footer from "./components/Footer";
 // 홈 페이지 컴포넌트 (스크롤로 연결된 섹션들)
 function HomePage() {
   useEffect(() => {
-    // URL에 #about가 있으면 about 섹션으로 스크롤
-    if (window.location.hash === "#about") {
+    // URL fragment에 따라 해당 섹션으로 스크롤
+    const hash = window.location.hash;
+    if (hash) {
       setTimeout(() => {
-        const aboutSection = document.getElementById("about");
-        if (aboutSection) {
-          aboutSection.scrollIntoView({ behavior: "smooth" });
+        const section = document.getElementById(hash.slice(1)); // # 제거
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
         }
       }, 100); // 컴포넌트 렌더링 후 실행
     }
@@ -24,6 +25,8 @@ function HomePage() {
     <div>
       <Intro />
       <SectionAbout />
+      <SectionProjects />
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import characterImage from "../assets/character.png";
 
@@ -14,11 +13,11 @@ export default function Intro() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleAboutClick = (e: React.MouseEvent) => {
+  const handleScrollClick = (sectionId: string) => (e: React.MouseEvent) => {
     e.preventDefault();
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -53,7 +52,7 @@ export default function Intro() {
       </div>
 
       {/* 캐릭터 이미지 - 중앙 */}
-      <div className="z-0">
+      <div className="z-10">
         <img
           src={characterImage}
           alt="Character"
@@ -63,15 +62,16 @@ export default function Intro() {
 
       {/* 네비게이션 버튼들 - 하단 중앙 */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
-        <Link
-          to="/projects"
+        <a
+          href="#projects"
+          onClick={handleScrollClick("projects")}
           className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition"
         >
           프로젝트 보러가기
-        </Link>
+        </a>
         <a
           href="#about"
-          onClick={handleAboutClick}
+          onClick={handleScrollClick("about")}
           className="px-6 py-3 border-2 border-black text-black rounded-lg hover:bg-black hover:text-white transition"
         >
           소개 보기
