@@ -14,9 +14,17 @@ export default function Intro() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 스크롤에 따른 변환 계산
-  const leeTransform = Math.min(scrollY * 0.5, 200); // LEE는 왼쪽으로 최대 200px
-  const yunjiTransform = Math.min(scrollY * 0.3, 150); // YUNJI는 오른쪽으로 최대 150px
+  const handleAboutClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  // 스크롤에 따른 변환 계산 - 완전히 화면 밖으로 나가도록
+  const leeTransform = scrollY * 0.8; // LEE는 왼쪽으로 계속 이동
+  const yunjiTransform = scrollY * 0.6; // YUNJI는 오른쪽으로 계속 이동
 
   return (
     <section className="h-screen bg-white relative flex items-center justify-center">
@@ -27,21 +35,25 @@ export default function Intro() {
           transform: `translateX(-${leeTransform}px)`,
         }}
       >
-        <h1 className="text-8xl font-bold text-black">LEE</h1>
+        <h1 className="text-[230px] font-bold text-black pl-20 tracking-wider">
+          LEE
+        </h1>
       </div>
 
       {/* YUNJI 텍스트 - 오른쪽 하단, 스크롤 시 오른쪽으로 이동 */}
       <div
-        className="absolute bottom-16 right-16 transition-transform duration-300"
+        className="absolute bottom-16 right-16 transition-transform duration-300 z-20"
         style={{
           transform: `translateX(${yunjiTransform}px)`,
         }}
       >
-        <h1 className="text-8xl font-bold text-black">YUNJI</h1>
+        <h1 className="text-[210px] font-bold text-black tracking-wider">
+          YUNJI
+        </h1>
       </div>
 
       {/* 캐릭터 이미지 - 중앙 */}
-      <div className="z-10">
+      <div className="z-0">
         <img
           src={characterImage}
           alt="Character"
@@ -57,12 +69,13 @@ export default function Intro() {
         >
           프로젝트 보러가기
         </Link>
-        <Link
-          to="/about"
+        <a
+          href="#about"
+          onClick={handleAboutClick}
           className="px-6 py-3 border-2 border-black text-black rounded-lg hover:bg-black hover:text-white transition"
         >
           소개 보기
-        </Link>
+        </a>
       </div>
     </section>
   );
