@@ -13,20 +13,15 @@ export default function Intro() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleScrollClick = (sectionId: string) => (e: React.MouseEvent) => {
-    e.preventDefault();
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   // 스크롤에 따른 변환 계산 - 완전히 화면 밖으로 나가도록
   const leeTransform = scrollY * 0.8; // LEE는 왼쪽으로 계속 이동
   const yunjiTransform = scrollY * 0.6; // YUNJI는 오른쪽으로 계속 이동
 
   return (
-    <section className="h-screen bg-white relative flex items-center justify-center">
+    <section
+      id="intro"
+      className="h-screen bg-white relative flex items-center justify-center pt-16"
+    >
       {/* LEE 텍스트 - 왼쪽 상단, 스크롤 시 왼쪽으로 이동 */}
       <div
         className="absolute top-16 left-16 transition-transform duration-300"
@@ -34,7 +29,7 @@ export default function Intro() {
           transform: `translateX(-${leeTransform}px)`,
         }}
       >
-        <h1 className="text-[230px] font-bold text-black pl-20 tracking-wider">
+        <h1 className="text-[230px] font-black text-black pl-20 tracking-wider font-montserrat">
           LEE
         </h1>
       </div>
@@ -46,8 +41,20 @@ export default function Intro() {
           transform: `translateX(${yunjiTransform}px)`,
         }}
       >
-        <h1 className="text-[210px] font-bold text-black tracking-wider">
+        <h1 className="text-[210px] font-black text-black tracking-wider font-montserrat">
           YUNJI
+        </h1>
+      </div>
+
+      {/* Front-End Developer 텍스트 - 오른쪽 상단 (헤더 아래) */}
+      <div
+        className="absolute top-24 right-8 transition-transform duration-300 z-20"
+        style={{}}
+      >
+        <h1 className="text-[60px] font-semibold text-gray-400 tracking-wider text-right font-poppins">
+          Front-End
+          <br />
+          Developer
         </h1>
       </div>
 
@@ -58,24 +65,6 @@ export default function Intro() {
           alt="Character"
           className="w-96 h-96 object-contain"
         />
-      </div>
-
-      {/* 네비게이션 버튼들 - 하단 중앙 */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
-        <a
-          href="#projects"
-          onClick={handleScrollClick("projects")}
-          className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition"
-        >
-          프로젝트 보러가기
-        </a>
-        <a
-          href="#about"
-          onClick={handleScrollClick("about")}
-          className="px-6 py-3 border-2 border-black text-black rounded-lg hover:bg-black hover:text-white transition"
-        >
-          소개 보기
-        </a>
       </div>
     </section>
   );
