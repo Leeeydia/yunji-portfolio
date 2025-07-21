@@ -1,8 +1,10 @@
+import profileImg from "../assets/profile.jpg";
+
 export default function SectionAbout() {
   return (
     <section
       id="about"
-      className="h-screen bg-gray-100 flex items-center justify-center py-16"
+      className="min-h-screen bg-gray-100 flex items-center justify-center py-16"
     >
       <div className="max-w-6xl mx-auto px-8">
         <h2 className="text-6xl font-bold mb-16 text-gray-800 text-center">
@@ -14,7 +16,7 @@ export default function SectionAbout() {
           <div className="text-center">
             <div className="mb-8">
               <img
-                src="/api/placeholder/300/300"
+                src={profileImg}
                 alt="이윤지 프로필 사진"
                 className="w-64 h-64 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-lg"
               />
@@ -33,10 +35,10 @@ export default function SectionAbout() {
                 <p className="flex items-center justify-center gap-2">
                   <span>📱</span>
                   <a
-                    href="tel:010-1234-5678"
+                    href="tel:010-5533-1544"
                     className="hover:text-blue-600 transition"
                   >
-                    010-1234-5678
+                    010-5533-1544
                   </a>
                 </p>
                 <p className="flex items-center justify-center gap-2">
@@ -102,7 +104,7 @@ export default function SectionAbout() {
                   </div>
                 </div>
 
-                <div>
+                <div className="w-full min-w-0">
                   <h5 className="text-lg font-semibold text-gray-700 mb-2">
                     Tools & Others
                   </h5>
@@ -114,11 +116,10 @@ export default function SectionAbout() {
                       "Figma",
                       "Notion",
                       "Vercel",
-                      "Netlify",
                     ].map((tool) => (
                       <span
                         key={tool}
-                        className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm"
+                        className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm break-words"
                       >
                         {tool}
                       </span>

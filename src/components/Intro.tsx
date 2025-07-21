@@ -41,7 +41,7 @@ export default function Intro() {
           transform: `translateX(${yunjiTransform}px)`,
         }}
       >
-        <h1 className="text-[210px] font-black text-black tracking-wider font-montserrat">
+        <h1 className="text-[200px] font-black text-black tracking-wider font-montserrat">
           YUNJI
         </h1>
       </div>
@@ -63,7 +63,7 @@ export default function Intro() {
         <img
           src={characterImage}
           alt="Character"
-          className="w-96 h-96 object-contain"
+          className="w-[500px] h-[500px] object-contain"
         />
       </div>
     </section>
