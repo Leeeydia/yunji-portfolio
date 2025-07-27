@@ -24,7 +24,7 @@ export default function Intro() {
     >
       {/* LEE 텍스트 - 왼쪽 상단, 스크롤 시 왼쪽으로 이동 */}
       <div
-        className="absolute top-8 sm:top-12 lg:top-16 left-4 sm:left-8 lg:left-16 transition-transform duration-300"
+        className="absolute top-8 sm:top-12 lg:top-16 left-14 sm:left-20 lg:left-32 transition-transform duration-300"
         style={{
           transform: `translateX(-${leeTransform}px)`,
         }}
@@ -52,7 +52,7 @@ export default function Intro() {
         style={{}}
       >
         <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-[60px] font-semibold text-gray-400 tracking-wider text-right font-poppins leading-tight">
-          <span className="block">Front-End</span>
+          <span className="block">FrontEnd</span>
           <span className="block">Developer</span>
         </h1>
       </div>
