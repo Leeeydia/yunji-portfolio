@@ -110,6 +110,7 @@ src/
 **포트폴리오 웹사이트**
 
 - React, TypeScript, Tailwind CSS로 제작한 개인 포트폴리오
+- Live Demo: [yunji-portfolio.vercel.app](https://yunji-portfolio.vercel.app)
 - GitHub: [yunji-portfolio](https://github.com/Leeeydia/yunji-portfolio)
 
 **불멍스팟**
@@ -188,7 +189,8 @@ src/
 
 ## 🌐 배포
 
-- **Vercel**
+- **플랫폼**: Vercel
+- **배포 URL**: [https://yunji-portfolio.vercel.app](https://yunji-portfolio.vercel.app)
 
 ## 📱 반응형 브레이크포인트
 
