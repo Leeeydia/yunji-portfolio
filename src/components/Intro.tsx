@@ -62,7 +62,7 @@ export default function Intro() {
         <img
           src={characterImage}
           alt="Character"
-          className="w-60 h-60 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] object-contain"
+          className="w-72 h-72 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] object-contain"
         />
       </div>
     </section>
