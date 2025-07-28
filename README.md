@@ -102,8 +102,38 @@ src/
 ### 3. Projects (프로젝트)
 
 - 프로젝트 카드 형태의 갤러리
-- GitHub 링크 연동
+- Live Demo 및 GitHub 링크 연동
 - 기술 스택 태그
+
+#### 포함된 프로젝트들:
+
+**포트폴리오 웹사이트**
+
+- React, TypeScript, Tailwind CSS로 제작한 개인 포트폴리오
+- GitHub: [yunji-portfolio](https://github.com/Leeeydia/yunji-portfolio)
+
+**불멍스팟**
+
+- 캠핑API를 활용한 캠핑장 예약 웹사이트
+- Live Demo: [fire-spot.vercel.app](https://fire-spot.vercel.app/)
+- GitHub: [fire-spot](https://github.com/Leeeydia/fire-spot)
+
+**MBTI 성격 유형 테스트**
+
+- React 기반의 MBTI 성격 유형 테스트 웹 애플리케이션
+- 회원가입/로그인, 20개 질문을 통한 성격 진단, 결과 관리 기능 제공
+- GitHub: [my-mbti](https://github.com/Leeeydia/my-mbti)
+
+**영화 팀 프로젝트**
+
+- TMDB API를 활용한 영화 정보 웹사이트 (팀 프로젝트)
+- Live Demo: [movie-team-project.vercel.app](https://movie-team-project.vercel.app/)
+- GitHub: [movie-team-project](https://github.com/Leeeydia/movie-team-project)
+
+**My Pokédex**
+
+- PokeAPI를 활용한 1세대 포켓몬 도감 애플리케이션
+- GitHub: [my-pokedex](https://github.com/Leeeydia/my-pokedex)
 
 ### 4. Contact (연락처)
 
@@ -157,8 +187,8 @@ src/
 - 불필요한 리렌더링 방지
 
 ## 🌐 배포
-- **Vercel**
 
+- **Vercel**
 
 ## 📱 반응형 브레이크포인트
 

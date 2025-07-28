@@ -6,11 +6,11 @@ export default function Footer() {
     >
       <div className="max-w-4xl mx-auto w-full text-center">
         <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 lg:mb-8">
-          Contact
+          CONTACT
         </h3>
         <div className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed space-y-4 lg:space-y-6">
           <p className="mb-6 lg:mb-8">
-            함께 일하고 싶으시다면 언제든지 연락해주세요!
+          작은 기회라도 소중히 여기며, 함께할 날을 기다리고 있습니다.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 lg:gap-8 mb-6 lg:mb-8">
             <a

@@ -66,17 +66,29 @@ export default function SectionAbout() {
               <h4 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 lg:mb-4">
                 소개
               </h4>
-              <div className="text-base sm:text-lg text-gray-700 leading-relaxed space-y-3 lg:space-y-4">
+              <div className="text-base sm:text-lg text-gray-700 leading-relaxed space-y-1 lg:space-y-1.5">
+                <p>안녕하세요 !</p>
                 <p>
-                  안녕하세요! 사용자 경험을 중시하는 프론트엔드 개발자입니다.
+                  비전공자로 시작해 <strong>스스로 길</strong>을 만들어온
+                  프론트엔드 개발자 <strong>이윤지</strong>입니다.
                 </p>
                 <p>
-                  React, TypeScript, Tailwind CSS를 활용하여 직관적이고 아름다운
-                  웹 애플리케이션을 만드는 것을 좋아합니다.
+                  처음에는 코드 한 줄도 어렵게 느껴졌지만, 지금은 사용자 경험을
+                  고려해 기능과 UI를 설계할 수 있는 개발자로 성장했습니다.
                 </p>
                 <p>
-                  끊임없이 학습하고 성장하는 개발자가 되고자 하며, 새로운 기술과
-                  도전을 즐깁니다.
+                  <strong>React, TypeScript, Tailwind CSS</strong>를 중심으로{" "}
+                  <strong>사용자에게 편리하고 직관적인 화면</strong>을 구현하는
+                  데 집중하고 있습니다.
+                </p>
+                <p>
+                  혼자 공부하며 기초를 다졌고, 여러 팀 프로젝트를 통해 팀원들과
+                  함께 고민하고 성장하는 과정을 경험했습니다. 그 과정에서{" "}
+                  <strong>협업과 소통</strong>의 중요성도 자연스럽게 배웠습니다.
+                </p>
+                <p>
+                  앞으로도 계속 배우고 도전하며, 더 나은 사용자 경험을 만드는
+                  개발자가 되고 싶습니다.
                 </p>
               </div>
             </div>

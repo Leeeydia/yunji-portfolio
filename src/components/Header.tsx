@@ -48,7 +48,7 @@ export default function Header() {
               onClick={handleHomeClick}
               className="cursor-pointer"
             >
-            YUNJI
+              YUNJI
             </a>
           </div>
 
@@ -94,7 +94,7 @@ export default function Header() {
               onClick={handleScrollClick("about")}
               className="text-black hover:text-gray-600 transition text-lg py-2"
             >
-              ABOUT
+              About Me
             </a>
             <a
               href="#projects"
