@@ -110,7 +110,6 @@ export default function SectionAbout() {
                       "HTML5",
                       "CSS3",
                       "Tailwind CSS",
-                      "Next.js",
                     ].map((tool) => (
                       <span
                         key={tool}

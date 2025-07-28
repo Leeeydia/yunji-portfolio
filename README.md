@@ -124,7 +124,7 @@ src/
 - 회원가입/로그인, 20개 질문을 통한 성격 진단, 결과 관리 기능 제공
 - GitHub: [my-mbti](https://github.com/Leeeydia/my-mbti)
 
-**영화 팀 프로젝트**
+**B-Movie-Log**
 
 - TMDB API를 활용한 영화 정보 웹사이트 (팀 프로젝트)
 - Live Demo: [movie-team-project.vercel.app](https://movie-team-project.vercel.app/)
